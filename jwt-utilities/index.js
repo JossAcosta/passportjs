@@ -29,7 +29,6 @@ function verifyToken(token, secret) {
 
 // vamos a hacer nuestro flujo de ejecución 
 if (option == 'sign') {
-  
   console.log(signToken({ sub: nameOrToken }, secret));
 } else if (option == 'verify') {
   console.log(verifyToken(nameOrToken, secret));
